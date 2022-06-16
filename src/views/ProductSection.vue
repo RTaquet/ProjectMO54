@@ -10,12 +10,8 @@
         <p class="card-text ">{{product.category}}</p>
         <p class="card-text"><small class="text-muted">Rating:{{product.rating}}/5</small></p>
         <div class="d-flex" style="justify-content: space-around;">
-    <button class="btn btn-warning btn-text" type="button" @click="addToCart()">Add to Cart! <span class="material-symbols-outlined">
-    add_shopping_cart
-    </span></button>
-    <button class="btn btn-primary" type="button">Buy Now!<span class="material-symbols-outlined">
-    shopping_bag
-    </span></button>
+    <button class="btn btn-warning btn-text" type="button" @click="addToCart()">Add to Cart! </button>
+    <button class="btn btn-primary" type="button">Buy Now!</button>
     </div>
       </div>
     </div>
