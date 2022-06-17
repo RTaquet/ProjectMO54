@@ -1,3 +1,5 @@
+<!--@Author: Jean Maccou, -->
+
 <template>
   <router-view/>
 </template>
