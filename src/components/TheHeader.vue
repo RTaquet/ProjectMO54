@@ -7,17 +7,9 @@
     <div class="text"> Boutique MO54
     </div>
   </div>
-  <div class="item search right" tabindex="0">
-    <div class="search-group">
-      
-    <input type="text">
-    <i class="material-icons search-icon">
-      search
-    </i>
-      </div>
-  </div>
+ 
   
-  
+  <div class="items">
   <div class="  item">
     <div class="group">
       <i class="material-icons" >
@@ -42,6 +34,9 @@
       </div>
     </div>
   </a>
+  
+  </div>
+  
 </nav>
 
 </template>
@@ -80,7 +75,7 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 :root {
---theme-bg-color: #9ab9f3;
+--theme-bg-color: #f700a4;
 --theme-color: rgb(0, 0, 0);
 
 
@@ -104,6 +99,10 @@ export default {
   color: var(--theme-color);
   
 
+}
+
+.items {
+  display: flex;
 }
 
 .item{
@@ -160,33 +159,10 @@ export default {
   border: 0;
 }
 
-.item .search-group {
-  display:flex;
-  width: 100%;
-  max-width: 700px;
-  border-radius: 20px;
-  border: 2px solid grey;
-  overflow: hidden;
-  background: white;
-  
-  border-color: white;
-  color: var(--theme-color);
-
-}
-.item .search-group select{
-
-  border: 0;
-  margin: 2px;
-  border-right: 1px solid grey;
-  max-width: 5em;
-  outline: none;
-  color: grey;
-  
-}
 
 .item .group {
   display:flex;
-  align-items: center;
+  align-items: space-between;
   font-size: 0.9em;
 }
 
