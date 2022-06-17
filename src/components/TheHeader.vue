@@ -75,7 +75,7 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 :root {
---theme-bg-color: #f700a4;
+--theme-bg-color: #ffaee4;
 --theme-color: rgb(0, 0, 0);
 
 

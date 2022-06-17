@@ -32,7 +32,7 @@ data() {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* text-align: center; */
-  color: #2fa72a;
+  color: #34aa30;
 }
 
 </style>
