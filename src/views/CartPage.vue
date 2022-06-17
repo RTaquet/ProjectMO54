@@ -4,7 +4,7 @@
     <span v-on:keydown="key">{{message}}</span>
     <span class="d-flex mb-3 mt-2">
       <router-link to="/">
-        <span class="material-symbols-outlined"> arrow_back </span> Back To
+        <span class="material-symbols-outlined"> </span> Back To
         Shopping
       </router-link>
     </span>
@@ -33,10 +33,10 @@
                 <td>
                   <input type="number" name="" id="" @change="onChange(product.id,$event)" :value="product.count" size="4" min="1" max="10" />
                 </td>
-                <td><span>Rs. &#8377;{{parseFloat(product.price*70).toFixed(2)}}</span></td>
+                <td><span>{{parseFloat(product.price).toFixed(2)}} €</span></td>
                 <td>
                   <button class="btn btn-danger" @click="deleteItem(product.id)">
-                    <span class="material-symbols-outlined"> delete_forever </span>
+                    <span class="material-symbols-outlined"> delete item from shopping cart </span>
                   </button>
                 </td>
               </tr>
@@ -45,7 +45,7 @@
             <td></td>
             <td></td>
             <td>Total Quantity:{{items}}</td>
-            <td>Grand Total :&#8377;{{total}}</td>
+            <td>Grand Total :{{total}} €</td>
             <td><button class="btn btn-success" @click="checkout">Buy Now</button></td>
           </tr>
         </tbody>
@@ -135,7 +135,7 @@ export default {
            this.cart.forEach((each) => {
            sum  = sum +  each.price*each.count
           })
-        return parseFloat(sum*70).toFixed(2)
+        return parseFloat(sum).toFixed(2)
         }
     }
 };

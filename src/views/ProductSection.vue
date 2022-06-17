@@ -5,7 +5,7 @@
       <h5 class="card-title">{{product.title}}</h5>
       <img class="card-img-top card-image" :src="product.image" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title">{{product.price*70}} e </h5>
+        <h5 class="card-title">{{product.price}} e </h5>
         <p class="card-text desc">{{ product.description }}</p>
         <p class="card-text ">{{product.category}}</p>
         <p class="card-text"><small class="text-muted">Rating:{{product.rating}}/5</small></p>
@@ -16,7 +16,7 @@
       </div>
     </div>
     <router-link to="/">
-        <span class="material-symbols-outlined"> arrow_back </span> Back To
+        <span class="material-symbols-outlined"> </span> Back To
         Shopping
       </router-link>
   </div>
