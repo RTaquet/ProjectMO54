@@ -4,7 +4,7 @@
     menu
   </i>
   <div class="logo">
-    <div class="text"> E Mart
+    <div class="text"> Boutique MO54
     </div>
   </div>
   <div class="item search right" tabindex="0">

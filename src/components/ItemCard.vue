@@ -48,7 +48,8 @@ methods:{
 
 <style>
 .card-image{
-  max-height: 200px;
+  max-height: 300px;
+  max-width: 300px;
   padding: 25px;
 }
 .card-text{
